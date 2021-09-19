@@ -1,5 +1,5 @@
 # DroneSim
-Reinforcement learning for path following of an AirSim quadrotor implemented in Unity3D city environment
+Reinforcement learning for path following of an AirSim quadrotor implemented in Unity city environment
 ### GIF
 ## Getting Started
 - ### Download the [Unity package]() containing the customized city environment and the AirSim drone;
