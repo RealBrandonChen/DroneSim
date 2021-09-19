@@ -3,7 +3,7 @@ Reinforcement learning for path following of an AirSim quadrotor implemented in 
 ### GIF
 ## Getting Started
 - ### Download the [Unity package]() containing the customized city environment and the AirSim drone;
-- ### Add the Path_[Following directory]() to the AirSim/PythonClient/reinforcement_learning you've cloned;
+- ### Add the [Path_Following]() directory to the AirSim/PythonClient/reinforcement_learning you've cloned;
 - ### You can
   - ### Directly load the pre-trainined model:
   - ### Train your own model:
