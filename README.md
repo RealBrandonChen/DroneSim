@@ -47,7 +47,7 @@ def _compute_reward(self):
     return reward, done
 ```
 ## Future Work
-- ### Use the depth view of the drone camera as the observation
-  The drone currently follows the city road with its coordinates confirmed in Unity, however, this circumstance cannot be assured in the real world. So we should use the depth camera the drone has as the training observation and redesign the reward function to realize the path following task.
+- ### Use the segmentation view of the drone camera as the observation
+  The drone currently follows the city road with its coordinates confirmed in Unity, however, this circumstance cannot be assured in the real world. So we should use the segmentation camera the drone has as the training observation and redesign the reward function to realize the path following task.
 - ### Implement the trained model in the real drone
   Once the model with camera observation works, how to transfer the algorithm to the real drone should be considered.
