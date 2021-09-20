@@ -8,4 +8,42 @@ Reinforcement learning for path following of an AirSim quadrotor implemented in 
   - ### Directly load the pre-trainined model by hitting `python Model_Load.py` in the terminal, and you'll see the drone following the city road
   - ### Train your own model by `python dqn_drone.py`, your trained model is saved as "best_model.zip"
 ## Implementation Explanation
+### Code snippet credit to AirSim/PythonClient/Reinforcement_learning/drone_env, and the reward function is as following:
+```python
+def _compute_reward(self):
+    thresh_dist = 7
+    beta = 1
+    x = -240
+    y = 10
+    z = 200
+    pts = [
+        np.array([x, y, z]),
+        np.array([-350, y, z]),
+        np.array([-350, y, 150]),
+        np.array([-350, y, z-100]),
+        np.array([-350, y, z-200]),
+    ]
+    ...
+    ...
+    if self.state["collision"]:
+        reward = -100
+    else:
+        dist = 10000000
+        for i in range(0, len(pts) - 1):
+            dist = min(
+                dist,
+                np.linalg.norm(np.cross((quad_pt - pts[i]), (quad_pt - pts[i + 1])))
+                / np.linalg.norm(pts[i] - pts[i + 1]),
+            )
+
+        if dist > thresh_dist:
+            reward = -10
+    ...
+    ...
+    done = 0
+    if reward <= -10:
+        done = 1
+
+    return reward, done
+```
 ## Future Work
