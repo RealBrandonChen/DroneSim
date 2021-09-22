@@ -3,7 +3,7 @@
 ### Drone in training:
 |![Start](Images/Training_Started.gif)      |![4,000](Images/4,000_time_steps.gif)         |   ![12,000](Images/12,000_time_steps.gif)        |
 | -----------                               | -----------                                  | ---------                                        |
-| *Figure1. Training Started*    | *Figure2. 4,000 time steps*    |*Figure3. 12,000 time steps*   |
+| *Figure1. training started*    | *Figure2. 4,000 time steps*    |*Figure3. 12,000 time steps*   |
 ## Getting Started
 - ### Download the [Unity package](https://github.com/RealBrandonChen/DroneSim/releases/download/unity/Path_following_quadrotor.unitypackage) containing the customized city environment and the AirSim drone;
 - ### Add the python files in Path_Following to the AirSim/PythonClient/reinforcement_learning you've cloned;
