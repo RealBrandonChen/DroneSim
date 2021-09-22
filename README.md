@@ -56,3 +56,4 @@ The tuple of the coordinates represents the central line of the city road. The `
 - ### Generate images data with imitation learning
   A trained policy by cross-modal representations has been achieved by [Rogerio Bonatti](https://github.com/microsoft/AirSim-Drone-Racing-VAE-Imitation). The imitation learning data is generated for passing through the drone racing obstacles. The path following task should also work applied with the generated imitation learning data.
 - ### Implement the trained model in the real drone
+  Transfer the simulation algorithm to real-world platform.
