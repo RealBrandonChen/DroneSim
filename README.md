@@ -49,11 +49,10 @@ def _compute_reward(self):
 
     return reward, done
 ```
-The tuple of the coordinates represents the central line of the city road. This reward function computes the twice distance between the realtime drone and the central line comprised by the points. The distance computing is reperesented as following picture:
+The tuple of the coordinates represents the central line of the city road. The `dist` in the reward function computes the twice distance between the realtime drone and the central line comprised by the points. The distance computing is reperesented as following picture:
 ###
 ![Explanation fot the distance computing](Images/Explanation.png)
 ## Future Work
-- ### Use the segmentation view of the drone camera as the observation
-  The drone currently follows the city road with its coordinates confirmed in Unity, however, this circumstance cannot be assured in the real world. So we should use the segmentation camera the drone has as the training observation and redesign the reward function to realize the path following task.
+- ### Generate images data with imitation learning
+  A trained policy by cross-modal representations has been achieved by [Rogerio Bonatti](https://github.com/microsoft/AirSim-Drone-Racing-VAE-Imitation). The imitation learning data is generated for passing through the drone racing obstacles. The path following task should also work applied with the generated imitation learning data.
 - ### Implement the trained model in the real drone
-  Once the model with camera observation works, how to transfer the algorithm to the real drone should be considered.
