@@ -1,6 +1,6 @@
 # DroneSim
-Reinforcement learning for path following of an AirSim quadrotor implemented in Unity city environment
-### GIF
+### Reinforcement learning for path following of an AirSim quadrotor implemented in Unity city environment
+### Drone in training:
 |![Start](Images/Training_Started.gif)      |![4,000](Images/4,000_time_steps.gif)         |   ![12,000](Images/12,000_time_steps.gif)        |
 | -----------                               | -----------                                  | ---------                                        |
 | *Figure1. Training Started*    | *Figure2. 4,000 time steps*    |*Figure3. 12,000 time steps*   |
